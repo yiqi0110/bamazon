@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+const cTable = require('console.table');
 
 // create the connection information for the sql database
 var connection = mysql.createConnection({
@@ -31,7 +32,11 @@ function start(){
     var query = "SELECT products.id, products.product_name, products.price FROM products";
     connection.query(query, function (err, res) {
         if (err) throw err;
-        console.log(res);
+        var final = [];
+        for (var i = 0; i<res.length; i++){
+            final.push(res[i]);
+        }
+        console.table(final);
         inquirer.prompt([{
             name: "product_id",
             type: "text",
