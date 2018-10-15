@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "A application that respresents a extremely simple version of amazon market place",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiqi0110/bamazon.git"
+  },
+  "keywords": [
+    "bamazon"
+  ],
+  "author": "Trevor Strong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiqi0110/bamazon/issues"
+  },
+  "homepage": "https://github.com/yiqi0110/bamazon#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  }
+}
